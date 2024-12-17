@@ -1,0 +1,40 @@
+#programs-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+body {
+  margin: 0;
+  background-color: rgb(28, 28, 28);
+  font-family: "Roboto Slab", serif;
+}
+
+/* Header part */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 0.5px 0.5px rgba(255, 255, 255, 0.61);
+}
+header > h1 {
+  color: rgb(227, 227, 227);
+  text-decoration: none;
+  margin: 0 0 0 1rem;
+}
+
+/* Main part */
+
+#programs-main {
+  margin: 60px 0 0 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+#programs-main:has(figure:hover) figure:not(:hover) {
+  opacity: 0.5;
+}
