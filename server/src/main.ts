@@ -7,14 +7,8 @@ import "dotenv/config";
 import "../database/checkConnection";
 
 // Import the Express application from ./app
+import app from "./app";
 const port = process.env.APP_PORT;
-const express = require("express");
-import type { Request, Response } from "express";
-const app = express();
-
-app.get("/", (req: Request, res: Response) => {
-  res.send("Welcome to Wild Series !");
-});
 
 // Start the server and listen on the specified port
 app
