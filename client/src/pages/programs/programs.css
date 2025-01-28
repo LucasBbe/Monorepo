@@ -10,6 +10,13 @@ body {
 }
 
 /* Header part */
+p,
+h1,
+h2,
+span,
+h3 {
+  color: white;
+}
 
 header {
   display: flex;

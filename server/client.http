@@ -1,1 +1,25 @@
+
 GET http://localhost:3310/api/programs
+
+###
+
+POST http://localhost:3310/api/programs HTTP/1.1
+Content-Type: application/json
+
+{
+  "title": "Horreur",
+  "synopsis": "lalalalalalalalala",
+  "poster": "hihihihihihih",
+  "country": "Canada",
+  "year": "2025"
+}
+
+### 
+
+PUT http://localhost:3310/api/programs/:id HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": "1",
+  "name": "Horreur"
+}

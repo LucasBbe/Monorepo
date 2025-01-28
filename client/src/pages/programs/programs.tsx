@@ -12,7 +12,6 @@ function programs() {
       .then((data) => setSerie(data));
   }, []);
   console.info(serie);
-  // serie.map(() => {});
 
   return (
     <>

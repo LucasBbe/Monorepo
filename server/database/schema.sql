@@ -31,7 +31,8 @@ create table program (
   poster VARCHAR(255) NOT NULL,
   country VARCHAR(50) NOT NULL,
   year INT NOT NULL,
-  category_id INT
+  category_id int unsigned not null,
+  foreign key(category_id) references category(id)
 );
 
 INSERT INTO category(id, name)
